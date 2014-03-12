@@ -1,103 +1,103 @@
-#GreenBackTop {
-	position: absolute;
-	left: -1px;
-	top: -1px;
-	width: 2279px;
+/*****************
+  General style
+******************/
+
+body{
+	margin: 0;
+}
+/************************************
+				Grenn Top
+*************************************/
+#greenBackTop{
+	width: 1280px;
 	height: 401px;
-	z-index: 140;
 	background-color: #b1d235;
 }
-
-#GreenBack {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 2277px;
+#greenBack{
+	width: 1280px;
 	height: 120px;
-	z-index: 160;
 	background-color: #78b835;
 }
-
-#Backlogo {
-	position: absolute;
-	left: 650px;
-	top: 20px;
-	z-index: 161;	
+#logo{
+	padding: 20px 0 0 25%;	
 }
 
-#TextBlackTop {
-	position: absolute;
-	left: 650px;
-	top: 140px;
-	width: 525px;
-	height: 48px;
-	background-color: black;
-	z-index: 155;
-}
+/****************
+Text black top
+****************/
 
-#TextBlackTop p {
+#textBlack{
+	float: left;
+	padding: 20px 0 0 25%;
+	width: 640px;
+}
+#blackTop p{
 	font-size: 36px;
 	font-family: "OpenSans";
-	text-indent: 5px;
+	margin: 10px 0 0 0;
+	padding: 2px 5px 0 5px;
+	width: 515px;
 	color: #ffffff;
-	z-index: 154;
-	margin: 0px;
-}
-
-#TextBlackTop span {
-	color: #f5b901;
-	z-index: 154;
-}
-
-#TextBlackBottom {
-	opacity: 0.8;
-	position: absolute;
-	left: 650px;
-	top: 192px;
-	width: 620px;
-	height: 48px;
 	background-color: black;
-	z-index: 155;
 }
-
-#TextBlackBottom p {
+#blackTop span{
+	color: #f5b901;
+}
+#blackBottom p{
 	font-size: 36px;
-	text-indent: 5px;
-	font-family: openSans;
+	font-family: "OpenSans";
+	margin: 10px 0 0 0;
+	padding: 2px 5px 0 5px;
+	width: 610px;
 	color: #ffffff;
-	margin: 0;
-	z-index: 154;
+	background-color: black;
 }
 
-#Boy {
-	position: absolute;
-	left: 1366px;
-	top: 140px;
-	width: 194px;
-	height: 260px;
-	z-index: 153;
+/***********
+    Boy
+***********/
+
+#boy{
+	float: right;
+	margin: 37px 120px 0 0px;
+	z-index: 200;
 }
 
-#IstanbulBig {
+/***************
+	Istanbul
+***************/
+
+#istanbulFront {
 	position: absolute;
-	left: -1px;
-	top: 191px;
-	width: 2279px;
+	left: 138px;
+	top: 192px;
+	width: 1280px;
 	height: 209px;
-	z-index: 149;
+	z-index: 100;
+}
+#istanbulRear {
+	position: absolute;
+	left: 245px;
+	top: 230px;
+	width: 1280px;
+	height: 171px;
+	z-index: 99;
+}
+#bottLine{
+	position: absolute;
+	top: 381px;
+	width: 1280px;
+	height: 21px;
+	background-color: #2ca457;
+	z-index: 140;
 }
 
-#IstanbulBack {
-	position: absolute;
-	left: -1px;
-	top: 229px;
-	width: 2279px;
-	height: 171px;
-	z-index: 142;
-}
+/***********************************
+			information
+************************************/
 
 #line1 {
-	position: absolute;
+	/*position: absolute;*/
 	left: 650px;
 	top: 939px;
 	height: 1px;
@@ -105,8 +105,8 @@
 	background-color: #e5e8e9;
 }
 
-#FirstParag {
-	position: absolute;
+#firstParag {
+	/*position: absolute;*/
 	left: 650px;
 	top: 474px;
 	width: 892px;
@@ -114,21 +114,22 @@
 	z-index: 135;
 }
 
-.Parag {
+.parag {
 	font-size: 36px;
+	font-family: "OpenSans";
 	color: black;
 	line-height: 1.111;
 	margin: 20px 0px 20px;
 	text-align: left;
 }
 
-.PlainText {
+.plainText {
 	font-size: 15px;
 	color: black;
 }
 
-#Arrow {
-	position: absolute;
+#arrow {
+	/*position: absolute;*/
 	left: 890px;
 	top: 780px;
 	width: 35px;
@@ -136,8 +137,8 @@
 	z-index: 131;
 }
 
-#PhoneInstagram {
-	position: absolute;
+#phoneInstagram {
+	/*position: absolute;*/
 	left: 934px;
 	top: 753px;
 	width: 166px;
@@ -145,8 +146,8 @@
 	z-index: 123;
 }
 
-#PoneSelfei {
-	position: absolute;
+#poneSelfei {
+	/*position: absolute;*/
 	left: 650px;
 	top: 753px;
 	width: 260px;
@@ -154,8 +155,8 @@
 	z-index: 107;
 }
 
-#SecondParag {
-	position: absolute;
+#secondParag {
+	/*position: absolute;*/
 	left: 1140px;
 	top: 754px;
 	width: 500px;
@@ -163,12 +164,12 @@
 	z-index: 103;
 }
 
-#SecondParag span {
+#secondParag span {
 	background-color: #eaeded;
 }
 
 #line2 {
-	position: absolute;
+	/*position: absolute;*/
 	left: 650px;
 	top: 939px;
 	width: 939px;
@@ -178,8 +179,8 @@
 }
 
 
-#HotellookInstagram {
-	position: absolute;
+#hotellookInstagram {
+	/*position: absolute;*/
 	left: 1224px;
 	top: 1000px;
 	width: 275px;
@@ -187,8 +188,8 @@
 	z-index: 84;
 }
 
-#ThirdParag {
-	position: absolute;
+#thirdParag {
+	/*position: absolute;*/
 	left: 650px;
 	top: 1008px;
 	width: 407px;
@@ -197,7 +198,7 @@
 }
 
 #line3 {
-	position: absolute;
+	/*position: absolute;*/
 	left: 650px;
 	top: 1199px;
 	width: 939px;
@@ -206,8 +207,8 @@
 	background-color: #e5e8e9;
 }
 
-#Ticket {
-	position: absolute;
+#ticket {
+	/*position: absolute;*/
 	left: 689px;
 	top: 1274px;
 	width: 366px;
@@ -215,8 +216,8 @@
 	z-index: 60;
 }
 
-#RourthParag {
-	position: absolute;
+#rourthParag {
+	/*position: absolute;*/
 	left: 1137px;
 	top: 1274px;
 	width: 400px;
@@ -224,8 +225,8 @@
 	z-index: 57;
 }
 
-#Line4 {
-	position: absolute;
+#line4 {
+	/*position: absolute;*/
 	left: 650px;
 	top: 1479px;
 	width: 939px;
