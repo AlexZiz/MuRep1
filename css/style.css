@@ -1,0 +1,60 @@
+/*отступы*/
+*{
+	margin:0;
+}
+/*позиционирование по центру*/
+.positioner{
+	width:940px;
+	margin:0 auto;
+	border:2px dashed #3498db;
+}
+#wrap{
+	width:2279px;
+	margin:0;
+}
+#header{
+	height:400px;
+	position:relative;
+	background:#b1d235;
+}
+#header-top-line{
+	height:120px;
+	background:#78b835;
+}
+/* изображение с города */
+.IstambulFront{
+	position:absolute;
+	bottom:0px;
+	z-index:100;
+}
+.IstambulRear{
+	position:absolute;
+	bottom:0px;
+	z-index:100;
+}
+/*блок с логотипом*/
+#header-logo{
+	height:120px;
+	padding-top:20px;
+}
+/* текст в хедере*/
+.header-text{
+	margin-top:10px;
+	padding:0px;
+	font-size:36px;
+	z-index:101
+}
+.text-block{
+	color:#ffffff;
+	background:black;
+	padding:10px 20px;
+	margin-bottom:4px;
+}
+.header-text span{
+	color:#ffc000;
+}
+
+
+	
+	
+
