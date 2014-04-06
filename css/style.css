@@ -1,76 +1,79 @@
-/*отступы*/
-*{
-	margin:0;
-}
 body{
-	font-family: 'Open Sans', sans-serif;
+  margin:0px;
+  font-family:"Open Sans", sans-serif;
+  color:#272727;
 }
-/*позиционирование по центру*/
-.positioner-heder{
-	width:940px;
-	margin:0 auto;
-	/*border:1px dashed #3498db;*/
+header{
+  display:block;
 }
-#wrap{
-	width:100%;
-	margin:0;
+header{
+  position:relative;
+  height:400px;
+  background:#b1b235 url(../img/istambul-city.png) no-repeat 48% bottom;/*фоновое изображение в шапке*/
+  position:relative;
 }
-#header{
-	height:400px;
-	background:#b1d235;
+.top-line{/*верхняя линия с логотипом*/
+  height:120px;
+  background:#78b835;
 }
-#header-top-line{
-	height:120px;
-	background:#78b835;
+.positioner{/* позицианирующий блок*/
+  width:940px;
+  margin:auto;
 }
-/*блок с логотипом*/
-#header-logo{
-	height:120px;
-	padding-top:20px;
+.logo{/*логотип*/
+  margin:20px 0px 0px;
 }
-/* изображение с города */
-.sity-istambul{
-	position:relative;
-	margin-top:0px;
-	height:280px;
-	border:1px dashed #3498db;
+.boy{/*человек с рюкзаком*/
+  position:absolute;
+  right:50%;
+  bottom:0;
+  margin-right:-442px;
 }
-.istambul{
-	position:absolute;
-	bottom:0px;
+.header-tex{/*2 блока с текстом*/
+  margin:20px 0 0 0;
+  overflow:auto;
 }
-/* два блока с текстом в хедере*/
-.header-black-text{
-	width:940px;
-	margin-top:20px;
-	margin-left:auto;
-	margin-right:auto;	
-	border:1px dashed #3498db;
-}
-.black-block{
-	height:48px;
-	margin-bottom:4px;
-	border:1px dashed #3498db;
-}
-.black-text{
-	float:left;
-	color:#ffffff;
-	background:rgba(35, 42, 11, .8);
-	font-size:36px;
-	padding:10px 20px;
-	margin-bottom:4px;
-	border:1px dashed #3498db;
-}
-.clearfix:after{
-    content:'';
-    clear:both;
-    display:table;
+.black-text {/*блок с текстом, черный фон*/
+  float:left;
+  margin-bottom:4px;
+  padding:5px 20px 5px 20px;
+  font-size:30px;
+  font-weight:200;
+  color:#fff;
+  background:rgba(35, 42, 11, .8);
 }
 span{
-	color:#ffc000;
+  color:#f5b901;
 }
-
-
-	
-	
-
+.content{/*основная информация*/
+  width:940px;
+  margin:0 auto;
+}
+.but-bord{/*нижняя полоса у блоков контента*/
+  border-bottom:1px solid #e5e8e9;
+}
+.hed-h1{/*стили заголовка*/
+  font-size:36px;
+  font-weight:100;
+}
+.items{/*стили параграфа*/
+  font-size:15px;
+}
+.question{
+  margin:0 auto;
+  padding:70px 0 74px 0;
+}
+.regulations{
+  overflow:auto;
+}
+.regulations img{
+  float:left;
+  padding:70px 40px 0 0;
+}
+.regulations h1{
+  margin:70px 0 40px 0;
+}
+.regulations span{
+  color:#272727;
+  background:#eaeded;
+}
