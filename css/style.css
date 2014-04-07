@@ -9,7 +9,7 @@ header{
 header{
   position:relative;
   height:400px;
-  background:#b1b235 url(../img/istambul-city.png) no-repeat 48% bottom;/*фоновое изображение в шапке*/
+  background:rgb( 177, 210, 53 ) url(../img/istambul-city.png) no-repeat 48% bottom;/*фоновое изображение в шапке*/
   position:relative;
 }
 .top-line{/*верхняя линия с логотипом*/
@@ -27,7 +27,7 @@ header{
   position:absolute;
   right:50%;
   bottom:0;
-  margin-right:-442px;
+  margin-right:-430px;
 }
 .header-tex{/*2 блока с текстом*/
   margin:20px 0 0 0;
@@ -49,31 +49,82 @@ span{
   width:940px;
   margin:0 auto;
 }
-.but-bord{/*нижняя полоса у блоков контента*/
+ /*стили применяемые ко всем блокам*/
+.cont-block{/* стили блоков контента*/ /*#e5e8e9*/;
+  padding-top:70px;
   border-bottom:1px solid #e5e8e9;
 }
 .hed-h1{/*стили заголовка*/
   font-size:36px;
-  font-weight:100;
+  font-weight:300;
 }
 .items{/*стили параграфа*/
   font-size:15px;
 }
-.question{
+.question{/*первый блок*/
   margin:0 auto;
-  padding:70px 0 74px 0;
+  padding:0px 0 74px 0;
 }
-.regulations{
+.regulations{/*второй блок*/
   overflow:auto;
 }
-.regulations img{
+.regulations img{/*стили картинки*/
   float:left;
-  padding:70px 40px 0 0;
+  padding:0px 40px 0 0;
 }
 .regulations h1{
-  margin:70px 0 40px 0;
+  margin:0px 0 40px 0;
 }
 .regulations span{
   color:#272727;
   background:#eaeded;
+}
+.act{/*третий блок блок*/
+  overflow:auto;
+}
+.act img{/*стили картинки*/
+  float:right;
+  margin-left:165px;
+}
+.act p:last-child{
+  margin-top:65px;
+}
+.wait{
+ overflow:auto;
+}
+.wait img{
+  float:left;
+  margin-right:85px;
+}
+/*Список условий*/
+.terms ul{
+  list-style-image:url(../img/marker.png);
+  padding:0;
+  margin:0;
+}
+.terms li{
+  margin:0 0 35px 20px;
+}
+.terms li:last-child{
+  margin-bottom:0px;
+}
+.shared{/*социальные сети*/
+  margin-top:120px;
+  /*border:1px solid black;*/
+}
+.shared b{
+  margin-right:30px;
+  padding:30px;
+  font-size:36px;
+  font-weight:300;
+  text-transform:uppercase;
+}
+.social{
+  display:inline-block;
+  width:40px;
+  height:40px;
+  margin-right:10px;
+  border-radius:50%;
+  border:1px solid black;
+  vertical-align:middle;
 }
