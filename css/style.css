@@ -1,194 +1,158 @@
-body{
-  margin:0px;
-  font-family:"Open Sans", sans-serif;
-  color:#272727;
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
+  color: #272727;  
 }
-header{
-  display:block;
+header,
+footer {display: block;}
+/* Шапка страницы */
+header {
+  position: relative;
+  height: 380px;
+  border-bottom: 20px solid #2ca457;
+  background: rgb(177,210,53) url(../img/istambul-city.png) no-repeat 50% 100%;
 }
-header{
-  position:relative;
-  height:400px;
-  background:rgb( 177, 210, 53 ) url(../img/istambul-city.png) no-repeat 48% bottom;/*фоновое изображение в шапке*/
-  position:relative;
+/* Позиционный блок */
+.positioner {
+  margin: auto;
+  width: 940px;
 }
-/*верхняя линия с логотипом*/
-.top-line{
-  height:120px;
-  background:#78b835;
+/* Верхняя линия с логотипом */
+.top-line {
+  height: 120px;
+  background: #78b835;
 }
-/* позицианирующий блок*/
-.positioner{
-  width:940px;
-  margin:auto;
+/* Логотип */
+.logo {margin: 20px 0 0;}
+/* Человек с рюкзаком */
+.boy {
+  position: absolute;
+  right: 50%;
+  bottom: -20px;
+  margin-right: -442px;
 }
-/*логотип*/
-.logo{
-  margin:20px 0px 0px;
+/* 2 блока с текстом */
+.header-tex {
+  margin: 20px 0 0 0;
+  overflow: auto;
 }
-/*человек с рюкзаком*/
-.boy{
-  position:absolute;
-  right:50%;
-  bottom:0;
-  margin-right:-430px;
-}
-/*2 блока с текстом*/
-.header-tex{
-  margin:20px 0 0 0;
-  overflow:auto;
-}
-/*блок с текстом, черный фон*/
+/* Блок с текстом, черный фон */
 .black-text {
+  float: left;
+  margin-bottom: 4px;
+  padding: 5px 20px 5px 20px;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 3.2px;
+  color: #fff;
+  background :rgba(35,42,11, .8);
+}
+.header-tex span {color: #f5b901;}
+/* Контент */
+.content {
+  margin: 0 auto;
+  width: 940px;
+}
+ /* Стили блоков контента */
+.cont-block { 
+  border-bottom: 2px solid #e5e8e9;
+  padding-top: 70px;
+}
+/* Стили заголовка */
+.hed-h1 {
+  font-size: 36px;
+  font-weight: 300;
+}
+/* Стили параграфа */
+.items {font-size: 15px;}
+/* Блоки */
+/* Первый блок */
+.question {
+  margin: 0 auto;
+  padding: 0px 0 74px 0;
+}
+/* Второй блок */
+.regulations     {overflow: auto;}
+.regulations img {
   float:left;
-  margin-bottom:4px;
-  padding:5px 20px 5px 20px;
-  font-size:30px;
-  font-weight:200;
-  color:#fff;
-  background:rgba(35, 42, 11, .8);
+  padding: 0px 40px 0 0;
 }
-span{
-  color:#f5b901;
+.regulations h1 {
+  margin: 0px 0 40px 0;
 }
-/*основная информация*/
-.content{
-  width:940px;
-  margin:0 auto;
+.regulations span {
+  color: #272727;
+  background: #eaeded;
 }
- /*стили применяемые ко всем блокам*/
- /* стили блоков контента*/ /*#e5e8e9*/;
-.cont-block{
-  padding-top:70px;
-  border-bottom:1px solid #e5e8e9;
+/* Третий блок блок */
+.act     {overflow: auto;}
+.act img {
+  float: right;
+  margin-left: 165px;
 }
-/*стили заголовка*/
-.hed-h1{
-  font-size:36px;
-  font-weight:300;
+.act p:last-child {margin-top: 65px;}
+/* Четвертый блок */
+.wait     {overflow: auto;} 
+.wait img {
+  float: left;
+  margin-right: 85px;
 }
-/*стили параграфа*/
-.items{
-  font-size:15px;
+/* Список условий */
+.terms    {padding-bottom: 70px;}
+.terms ul {
+  list-style-image: url(../img/marker.png);
+  padding: 0;
+  margin: 0;
 }
-/*первый блок*/
-.question{
-  margin:0 auto;
-  padding:0px 0 74px 0;
+.terms li            {margin: 0 0 35px 20px;}
+.terms li:last-child {margin-bottom: 0px;}
+/* Социальные сети */
+.shared {
+  margin: 70px 0 80px 0;
+  padding: 0 0 0 0;
 }
-/*второй блок*/
-.regulations{
-  overflow:auto;
+.shared b {
+  margin-right: 30px;
+  font-size: 36px;
+  font-weight: 300;
+  text-transform: uppercase;
+  vertical-align: top;
 }
-/*стили картинки*/
-.regulations img{
-  float:left;
-  padding:0px 40px 0 0;
+.social {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  vertical-align: top;
 }
-.regulations h1{
-  margin:0px 0 40px 0;
+.social-block {
+  display: inline-block;
+  margin: 5px;
 }
-.regulations span{
-  color:#272727;
-  background:#eaeded;
+/* Кнопки социальных сетей */
+.social-vk   {background: #4e759d url(../img/social.png) no-repeat 13px 10px;}
+.social-fb   {background: #355f9f url(../img/social.png) no-repeat -38px 10px;}
+.social-tv   {background: #2ba9e1 url(../img/social.png) no-repeat -86px 10px;}
+.social-inst {background: #335989 url(../img/social.png) no-repeat -138px 11px;}
+.social-gop  {background: #d13e2a url(../img/social.png) no-repeat -186px 10px;}
+.social-p    {background: #c52029 url(../img/social.png) no-repeat -236px 10px;}
+/* Обсуждения */
+#disqus_thread {
+  width: 940px;
+  margin: 0 auto;
 }
-/*третий блок блок*/
-.act{
-  overflow:auto;
+/* Подвал */
+footer {
+  width: 100%
+  bottom: 0;
+  margin: 0;
+  background: #8da82a;
 }
-/*стили картинки*/
-.act img{
-  float:right;
-  margin-left:165px;
-}
-.act p:last-child{
-  margin-top:65px;
-}
-.wait{
- overflow:auto;
-}
-/*стили картинки*/
-.wait img{
-  float:left;
-  margin-right:85px;
-}
-/*Список условий*/
-.terms{
-  padding-bottom:70px;
-}
-.terms ul{
-  list-style-image:url(../img/marker.png);
-  padding:0;
-  margin:0;
-}
-.terms li{
-  margin:0 0 35px 20px;
-}
-.terms li:last-child{
-  margin-bottom:0px;
-}
-/*социальные сети*/
-.shared{
-  margin-top:70px;
-  padding:0 0 0 0;
-}
-.shared b{
-  margin-right:30px;
-  font-size:36px;
-  font-weight:300;
-  text-transform:uppercase;
-  vertical-align:top;
-}
-.social{
-  display:inline-block;
-  width:40px;
-  height:40px;
-  margin-right:10px;
-  border-radius:50%;
-  vertical-align:top;
-}
-.social-block{
-  display:inline-block;
-  margin:5px;
-}
-.social-vk{
-  background:#4e759d url(../img/social.png) no-repeat 13px 9px;
-}
-.social-fb{
-  background:#355f9f url(../img/social.png) no-repeat -38px 9px;
-}
-.social-tv{
-  background:#2ba9e1 url(../img/social.png) no-repeat -86px 9px;
-}
-.social-inst{
-  background:#335989 url(../img/social.png) no-repeat -136px 9px;
-}
-.social-gop{
-  background:#d13e2a url(../img/social.png) no-repeat -186px 9px;
-}
-.social-p{
-  background:#c52029 url(../img/social.png) no-repeat -236px 9px;
-}
-/*подвал*/
-/*обсуждения*/
-.discussion{
-  background:#f2f2f2;
-}
-.disc-block{
-  width:940px;
-  margin:0 auto;
-}
-.discussion h1{
-  padding:85px 0 65px;
-}
-.footer-bg{
-  background:#8da82a;
-}
-.copyright{
-  width:940px;
-  margin:0 auto;
-  padding:30px 0 20px 0;
-  text-align:center;
-  color:white;
+  footer p {
+  padding: 30px 0 20px 0;
+  text-align: center;
+  color: white;
 }
 
