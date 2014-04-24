@@ -1,60 +1,54 @@
-/* ====================================
+/*** ОБЩИЕ СТИЛИ ***/
 
-   Общие стили
-
-/=====================================*/
 body {
   margin: 0;
-  padding: 0;
   font-family: "Open Sans", sans-serif;
   color: #272727;  
 }
+
 header,
-footer {display: block;}
+footer {
+  display: block;
+}
 
-/* ====================================
+/** ШАПКА **/
 
-   Шапка страницы
-
-/=====================================*/
 header {
   position: relative;
+  margin: 0;
   height: 380px;
-  border-bottom: 20px solid #2ca457;
-  background: rgb(177,210,53) url(../img/istambul-city.png) no-repeat 50% 100%;
+  border-bottom: 20px solid #21a14f;
+  background: #b1d235 url(../img/istambul-city.png) no-repeat 50% 100%;
 }
 
-/* Позиционный блок */
-.positioner {
+.positioner {/*Позиционный блок*/
   margin: auto;
-  width: 940px;
+  max-width: 940px;
 }
 
-/* Верхняя линия с логотипом */
-.top-line {
+
+.top-line {/*Верхняя линия с логотипом*/
   height: 120px;
   background: #78b835;
 }
 
-/* Логотип */
-.logo {margin: 20px 0 0;}
+.logo {/*Логотип*/
+  margin: 20px 0 0;
+}
 
-/* Человек с рюкзаком */
-.boy {
+.boy {/*Человек с рюкзаком*/
   position: absolute;
   right: 50%;
   bottom: -20px;
   margin-right: -442px;
 }
 
-/* 2 блока с текстом */
-.header-tex {
+.header-tex {/*2 блока с текстом*/
   margin: 20px 0 0 0;
   overflow: auto;
 }
 
-/* Блок с текстом, черный фон */
-.black-text {
+.black-text {/*Блок с текстом, черный фон*/
   float: left;
   margin-bottom: 4px;
   padding: 5px 20px 5px 20px;
@@ -65,83 +59,137 @@ header {
   background-color: #000000;
   opacity:0.8;
 }
-.header-tex span {color: #f5b901;}
 
-/* ====================================
-
-   Контент
-
-/=====================================*/
-.content {
-  margin: 0 auto;
-  width: 940px;
+.header-tex span {
+  color: #f5b901;
 }
 
- /* Стили блоков контента */
-.cont-block { 
+/*** КОНТЕНТ ***/
+
+.content {/*Задаем общею ширину контента и выравнивание по центру*/
+  margin: auto;
+  max-width: 940px;
+}
+
+.cont-block {/*Серая нижняя полоса у каждого блока*/
   border-bottom: 2px solid #e5e8e9;
-  padding-top: 70px;
 }
 
-/* Стили заголовка */
-.hed-h1 {
+.hed-h1 {/*Стили заголовка*/
   font-size: 36px;
   font-weight: 300;
 }
 
-/* Стили параграфа */
-.items {font-size: 15px;}
-
-/* Блоки */
-/* Первый блок */
-.question {
-  margin: 0 auto;
-  padding: 0 0 74px 0;
+.items {/*Стили параграфа*/
+  font-size: 15px;
 }
 
-/* Второй блок */
-.regulations     {overflow: auto;}
+.clearfix:after {/*Убираем обтекание родительского блока*/
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+/*** БЛОКИ С ФОТО ***/
+
+.question {/*Первый блок*/
+  margin: 70px 0 65px 0;
+  padding-bottom: 70px;
+}
+
+.question h1 {
+  margin: 0 0 35px 0;
+}
+
+.regulations {/*Второй блок*/
+  margin: 0 0 60px 0;
+}
+
 .regulations img {
   float:left;
-  padding: 0 40px 0 0;
+  margin-right: 40px;
 }
+
 .regulations h1 {
-  margin: 0 0 40px 0;
+  float:left;
+  margin: -10px 0 40px 0;
 }
+
+.regulations p {
+  float: left;
+}
+
 .regulations span {
   color: #272727;
   background: #eaeded;
 }
 
-/* Третий блок блок */
-.act     {overflow: auto;}
+.act {/* Третий блок блок */
+  margin-bottom: 70px;
+}
+
 .act img {
   float: right;
-  margin-left: 165px;
 }
-.act p:last-child {margin-top: 65px;}
 
-/* Четвертый блок */
-.wait     {overflow: auto;} 
+.act p{
+  float: left;
+  margin: 0;
+}
+
+.act p + p {
+  margin-top: 50px;
+}
+
+.wait {/* Четвертый блок */
+  margin-bottom: 40px;
+} 
+
 .wait img {
   float: left;
   margin-right: 85px;
 }
-/* Список условий */
-.terms    {padding-bottom: 70px;}
+
+.wait h1 {
+  float: left;
+  margin: -10px 0 0 0;
+}
+
+.wait p {
+  float: left;
+  margin:  30px 0 0 0;
+  color: #b1d235;
+}
+
+.terms {/*Список условий*/
+  padding-bottom: 70px;
+}
+
+.terms h1 {
+  margin: 0 0 40px 0;
+}
+
 .terms ul {
   list-style-image: url(../img/marker.png);
   padding: 0;
   margin: 0;
 }
-.terms li            {margin: 0 0 35px 20px;}
-.terms li:last-child {margin-bottom: 0;}
 
-/* Социальные сети */
-.shared {
+.terms li {
+  margin: 0 0 35px 20px;
+}
+
+.terms li:last-child {
+  margin-bottom: 0;
+}
+
+.shared {/*Блок - Социальные сети*/
   margin: 70px 0 80px 0;
   padding: 0 0 0 0;
 }
+
 .shared b {
   margin-right: 30px;
   font-size: 36px;
@@ -149,6 +197,7 @@ header {
   text-transform: uppercase;
   vertical-align: top;
 }
+
 .social {
   display: inline-block;
   width: 40px;
@@ -157,47 +206,88 @@ header {
   border-radius: 50%;
   vertical-align: top;
 }
+
 .social-block {
   display: inline-block;
   margin: 5px;
 }
 
-/* Кнопки социальных сетей */
-.social-vk,   
-.social-fb, 
+.social-vk,/* Фоновое изображение кнопок*/
+.social-fb,
 .social-tv,
 .social-inst,
 .social-gop,
-.social-p{   background: url(../img/social.png) no-repeat;}		/*фоновое изображение*/
+.social-p {
+  background: url(../img/social.png) no-repeat;
+}
 
-.social-vk   {background-position:  13px 10px ; }				/*позиционирование фона*/
-.social-fb   {background-position: -38px 10px ; }
-.social-tv   {background-position: -86px 10px ; } 
-.social-inst {background-position: -138px 11px ; }
-.social-gop  {background-position: -186px 10px ; }
-.social-p    {background-position: -236px 10px ; }
+.social-vk {/*позиционирование фона*/
+  background-position:  13px 10px;
+}
 
-.social-vk   {background-color: #4e759d ; }						/*цвет кнопок*/
-.social-fb   {background-color: #355f9f ; }
-.social-tv   {background-color: #2ba9e1 ; } 
-.social-inst {background-color: #335989 ; }
-.social-gop  {background-color: #d13e2a ; }
-.social-p    {background-color: #c52029 ; }
+.social-fb {
+  background-position: -38px 10px;
+}
 
-/* Обсуждения */
+.social-tv   {
+  background-position: -86px 10px;
+} 
+
+.social-inst {
+  background-position: -138px 11px;
+}
+
+.social-gop {
+  background-position: -186px 10px;
+}
+
+.social-p {
+  background-position: -236px 10px;
+}
+
+.social-vk {/*цвет кнопок*/
+  background-color: #4e759d;
+}
+
+.social-fb {
+  background-color: #355f9f;
+}
+
+.social-tv {
+  background-color: #2ba9e1;
+} 
+
+.social-inst {
+  background-color: #335989;
+}
+
+.social-gop {
+  background-color: #d13e2a;
+}
+
+.social-p {
+  background-color: #c52029;
+}
+
+/*** ОБСУЖДЕНИЯ ***/
+
 #disqus_thread {
   width: 940px;
   margin: 0 auto;
 }
-/* ====================================
 
-   Подвал
+/*** ПОДВАЛ ***/
 
-/=====================================*/
 footer {
   bottom: 0;
   margin: 0;
   width: 100%;
+  height: 60px;
+  background: #8da82a;
+}
+
+.foot {
+  margin: 0 0 -20px 0;
   background: #8da82a;
 }
   footer p {
